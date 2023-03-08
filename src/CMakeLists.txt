@@ -1,0 +1,5 @@
+if(WIN32)
+    target_sources(hooklib PRIVATE win32_patchmem.cpp)
+else()
+    target_sources(hooklib PRIVATE unix_patchmem.cpp)
+endif()
